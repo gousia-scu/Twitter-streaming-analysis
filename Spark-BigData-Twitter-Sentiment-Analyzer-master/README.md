@@ -19,7 +19,7 @@ In Terminal : cd to IntelliJ IDEA project dir. -> sbt package (a jar file is cre
 
 Spark Submit job to cluster : spark-submit jar file ->  execute following command from your own project folder in Terminal
 
-Furqans-MacBook-Pro:Spark-TWSentimentAnalyzer furqan$spark-submit --jars stanford-corenlp-3.9.1-models-english.jar --driver-class-path stanford-corenlp-3.9.1-models-english.jar --conf spark.executor.extraClassPath=stanford-corenlp-3.9.1-models-english.jar --class "TwitterStreamAnalyzer" --master local[*] /target/scala-2.11/spark-twsentimentanalyzer_2.11-1.0.jar
+$spark-submit --jars stanford-corenlp-3.9.1-models-english.jar --driver-class-path stanford-corenlp-3.9.1-models-english.jar --conf spark.executor.extraClassPath=stanford-corenlp-3.9.1-models-english.jar --class "TwitterStreamAnalyzer" --master local[*] /target/scala-2.11/spark-twsentimentanalyzer_2.11-1.0.jar
 
 
 
